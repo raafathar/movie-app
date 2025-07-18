@@ -3,11 +3,14 @@ import Header from '../../Fragments/Header'
 
 const MainLayout = ({ children }) => {
     return (
-        <div className="flex flex-col items-center w-full h-full dark:bg-gray-800 bg-white">
+        <>
             <Header />
             <ThemeSwitcher />
-            {children}
-        </div>
+            <main className="flex flex-col justify-center items-center p-2 my-10 lg:w-1/2 w-full h-fit gap-10">
+                {children}
+            </main>
+        </>
+
     );
 };
 
